@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/game.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game</title>
+</head>
+
+<body>
+
+    <div class="intro">
+        <div class="container text-center mt-5">
+            <div>
+                <h3 class="mt-5 mb-5" >Welcome</h3>
+            </div>
+    <div>
+        <button class="start-game mt-5 btn" >Start Game </button>
+    </div>
+    <div class="text-center d-flex levelsdiv  ">
+        <button class="easy mt-5" >easy</button>
+        <button class="hard mt-5" >hard</button>
+    </div>
+        </div>
+    </div>
+
+
+    <div class="game-container col-12 mt-md-5">
+        <div class="info-container ">
+            <div class="tries"></div>
+        </div>
+
+        <div class="icons-container col-12 row text-center ">
+            <div class="over ">
+                <!-- <div class="faileddiv col-4">
+               <p class="col-4">"You failed"</p>
+                </div> -->
+            </div>
+            <div class="icon icon1 col-3" data-icon="tqywkdcz">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json"     trigger="loop"
+                    delay="2000"
+                        style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/tqywkdcz.json"     trigger="loop"
+                    delay="2000"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon icon2 col-3" data-icon="tqywkdcz">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/tqywkdcz.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon icon3 col-3" data-icon="pjibjvxa">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/pjibjvxa.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon icon4 col-3" data-icon="pjibjvxa">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/pjibjvxa.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon icon5 col-3" data-icon="cjyxqyly">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/cjyxqyly.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon icon6 col-3" data-icon="cjyxqyly">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/cjyxqyly.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon icon7 col-3" data-icon="iwaotjbp">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/iwaotjbp.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon icon8 col-3" data-icon="iwaotjbp">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/iwaotjbp.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon icon9 col-3" data-icon="yhtqafjk">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/yhtqafjk.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="yhtqafjk">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/yhtqafjk.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="liqouopv">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/liqouopv.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="liqouopv">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/liqouopv.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="qierxeeb">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/qierxeeb.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="qierxeeb">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/qierxeeb.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="ajkxzzfb">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/ajkxzzfb.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3"data-icon="ajkxzzfb">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/ajkxzzfb.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="ttioogfl">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/ttioogfl.json" trigger="morph"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="ttioogfl">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/ttioogfl.json" trigger="morph"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="alzqexpi">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/alzqexpi.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="icon col-3" data-icon="alzqexpi">
+                <div class="front face">
+                    <lord-icon src="https://cdn.lordicon.com/mrjuyheh.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+                <div class="back face">
+                    <lord-icon src="https://cdn.lordicon.com/alzqexpi.json" trigger="hover"
+                    style="width: 100%; height: 100%" class="img-fluid">
+                    </lord-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/game.js"></script>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</body>
+
+</html>

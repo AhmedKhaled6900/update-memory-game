@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.icons-container {
+    border: 5px solid #0dcaf0;
+    border-radius: 10px;
+    padding: 12px;
+    height: calc(100vh - 100px);
+    background-color: darkcyan;
+    margin: 20px 0 0 0;
+    position: relative;
+
+}
+.icon {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+
+}
+.over{
+    width: 100%;
+    height: 0%;
+    background-color: #005258;
+    position: absolute;
+    transition: 1s;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.over.active{
+    height: 100%;
+}
+.icon.noclick{
+    pointer-events: none;
+}
+.icon.active{
+    transform: rotateY(180deg);
+}
+.icon.done{
+    transform: rotateY(180deg);
+}
+.back{
+    background-color: cadetblue;
+transform: rotateY(180deg);    ;
+}
+.front{
+    background-color: #000000a3;
+
+}
+.face{
+position: absolute;
+width: 95%;
+height: 95%;
+backface-visibility: hidden;    
+
+border-radius: 5px;
+
+}
+.gameover{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black ;
+    border-radius: 10px;
+    top: 100px ;
+    left: 400px;
+    background-color: aquamarine;
+}
+.intro
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #005258;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.easy,
+.hard{
+    display: none;
+
+}
+.easy.active{
+    display: block;
+}
+.hard.active{
+display: block;
+margin-left: 15px;
+}
+.intro.hide{
+display: none;
+}
+.icon{
+    padding: 0;
+}
+.solveddiv{
+    background-color: aliceblue;
+}
+.faileddiv{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: black;
+}
+.gooddiv{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: black;
+}
+.solveddiv {
+    background-color: #006464;
+    line-height: 40px;
+
+    margin-top: 20px;}
+    .result{
+        color: antiquewhite;
+    }
+    .span{
+   color: black;
+   font-size: 17px;
+    }
+    .span2{
+        margin-left: 5px;
+        width: 27px;
+        height: 29px;
+
+        color: wheat;
+        line-height: 29px;
+        background-color: #006464;
+        border-radius: 2px;
+        display: inline-block;
+        box-shadow: 0 0 0.3rem;
+    }
+    .btn{
+        background-color: #006464;
+        color: black;
+        margin-top: 40px;
+        border: 1px solid black;
+    }
+    .btn:hover{
+        box-shadow: 0 0 .3rem;
+        color: whitesmoke;
+        background-color: #013030;
+    }
+    .span3{
+        margin-left: 5px;
+        color: black;
+        font-size: 20px;
+        line-height: 20px;
+        height: 20px;
+    }
+    .levelsdiv{
+        justify-content: center;
+    }
