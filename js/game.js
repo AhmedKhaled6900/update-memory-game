@@ -21,7 +21,7 @@ easy.addEventListener("click", function () {
 });
 
 hard.addEventListener("click", function () {
-  clickcounter = 10;
+  clickcounter = 20;
   allclicks.innerHTML = `Remaining tries :  ${clickcounter}`;
   intro.classList.add("hide");
 });
